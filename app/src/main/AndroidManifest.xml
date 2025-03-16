@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.mtc.qqadmin.AddBulkQActivity"></activity>
+        <activity android:name="com.mtc.qqadmin.QuestionDetailsActivity" />
+        <activity android:name="com.mtc.qqadmin.QuestionActivity" />
+        <activity android:name="com.mtc.qqadmin.TestActivity" />
+        <activity android:name="com.mtc.qqadmin.CategoryActivity" />
+        <activity android:name="com.mtc.qqadmin.MainActivity" />
+        <activity android:name="com.mtc.qqadmin.LoginActivity" />
+        <activity android:name="com.mtc.qqadmin.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
